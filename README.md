@@ -2,25 +2,23 @@
 
 Smart Contact Manager is an advanced contact management application built with Spring Boot, Hibernate, Thymeleaf, and Bootstrap. It provides a user-friendly interface for managing contacts efficiently.
 
-![image](https://github.com/Varshil25/SmartContactManager/assets/130171937/b5ed8db4-1839-463e-a541-a87669d24c0e)
+![Screenshot from 2024-05-17 10-54-33](https://github.com/Varshil25/SmartContactManager/assets/130171937/31f43ac1-8d77-4f50-959b-6c9d9313d6a3)
 </br> </br>
-![image](https://github.com/Varshil25/SmartContactManager/assets/130171937/44ebad86-ba98-41a2-a8f6-a1010fa15f2f)
+![image](https://github.com/Varshil25/SmartContactManager/assets/130171937/f267b4d6-1874-4edd-8ce8-ff4d0a908190)
 </br> </br>
-![image](https://github.com/Varshil25/SmartContactManager/assets/130171937/4713ad90-69a8-4e28-9cc9-13200d88467f)
+![image](https://github.com/Varshil25/SmartContactManager/assets/130171937/5a19317a-b788-4bad-95e1-d11cf949af22)
 </br> </br>
-![image](https://github.com/Varshil25/SmartContactManager/assets/130171937/ddc979c7-0783-41e8-bb3c-8c76638f836f)
+![image](https://github.com/Varshil25/SmartContactManager/assets/130171937/2ca459ff-90aa-4971-814b-e5393a04d015)
 </br></br>
-![image](https://github.com/Varshil25/SmartContactManager/assets/130171937/b1ff582d-7d23-47c4-b23e-886e5ad5c5a2)
+![image](https://github.com/Varshil25/SmartContactManager/assets/130171937/574b6d08-490c-4288-8e64-ad91c70ea187)
 </br></br>
-![image](https://github.com/Varshil25/SmartContactManager/assets/130171937/96bc0713-d3b6-403f-809e-6bde4f4269c1)
+![image](https://github.com/Varshil25/SmartContactManager/assets/130171937/3a5c34f6-2369-4e24-89ed-1eafee0572bb)
 </br></br>
-![image](https://github.com/Varshil25/SmartContactManager/assets/130171937/5a7ace58-87a8-426e-9682-500101cadc1b)
+![image](https://github.com/Varshil25/SmartContactManager/assets/130171937/bdb5d9de-b011-4dae-9909-8cc7575e20c6)
 </br></br>
-![image](https://github.com/Varshil25/SmartContactManager/assets/130171937/f8ef7742-6b0b-43b5-b617-fcec75ee1e30)
-
-
-
-
+![image](https://github.com/Varshil25/SmartContactManager/assets/130171937/ae2f8fba-7815-4200-9370-5fe2ecae6e5e)
+</br></br>
+![image](https://github.com/Varshil25/SmartContactManager/assets/130171937/6b5c5666-3b40-4b41-82c8-0ed8bedfe9cb)
 
 ## Features
 
