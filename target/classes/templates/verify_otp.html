@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org"
+	th:replace="base::Layout(~{::section})">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+</head>
+<body>
+
+	<section class="login-body">
+		<div id="login">
+			<div class="container">
+				<div id="login-row"
+					class="row justify-content-center align-items-center">
+					<div id="login-column" class="col-md-7">
+						<div id="login-box" style="height: 250px;"
+							class="col-md-8 offset-md-2">
+							<!-- Display the success message only if myotp is not null -->
+
+							<div class="alert alert-success m-3 text-center" role="alert">We
+								have sent OTP to your registered Email..</div>
+
+							<div class="m-3">
+								<div th:if="${session.message}"
+									th:classappend="${session.message.type}"
+									class="alert alert-dismissible fade show text-center"
+									style="height: 50px;" role="alert">
+									<p class="text-center" th:text="${session.message.content}"></p>
+								</div>
+							</div>
+
+							<form action="#" th:action="@{/verify-otp}" method="post">
+								<div class="form-group">
+									<input required="required" name="otp" type="number"
+										placeholder="Enter OTP here" class="form-control">
+								</div>
+								<div class="container text-center mt-2">
+									<button type="submit" class="btn btn-warning btn-sm">Verify</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

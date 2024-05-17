@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+body {
+	background: #e2e2e2;
+}
+
+.bg-primary {
+	background: #009688 !important;
+}
+
+.banner {
+	width: 100%;
+	height: 93vh;
+	background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
+		url(../Img/banner.webp);
+	background-size: cover;
+	color: white;
+}
+
+.my-card {
+	padding: 20px;
+	background: white;
+}
+
+/* Login Page CSS Start */
+#login .container #login-row #login-column #login-box {
+	margin-top: 120px;
+	max-width: 600px;
+	height: 420px;
+	border: 1px solid #9C9C9C;
+	background-color: white;
+}
+
+.text-info {
+	padding: 5px;
+	
+}
+
+#login .container #login-row #login-column #login-box #login-form {
+	padding: 30px;
+}
+
+#login .container #login-row #login-column #login-box #login-form .remember-me
+	{
+	margin-bottom: 25px;
+	/* Add some space between Remember me and Register here */
+}
+
+
+#login .container #login-row #login-column #login-box #login-form #register-link,
+	#login .container #login-row #login-column #login-box #login-form #forgot-password-link
+	{
+	margin-top: -20px; /* Adjust the margin as needed */
+}
+
+/* login page CSS end */
+
+/* Sidebar style */
+.sidebar {
+	width: 18%;
+	background: white;
+	height: 100vh;
+	position: fixed;
+	padding-top: 45px;
+	z-index: 999999999999999999999999;
+}
+
+.sidebar a {
+	display: block;
+	width: 100%;
+	padding: 10px 25px;
+	text-decoration: none;
+	color: gray;
+}
+
+.sidebar .divider {
+	height: 0.5px;
+	width: 100%;
+	background: #e2e2e2;
+	margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+	.sidebar {
+		display: none;
+		width: 80% !important;
+		background: white;
+		height: 100vh;
+		position: fixed;
+		padding-top: 20px;
+	}
+	.content {
+		margin-left: 0% !important;
+	}
+}
+
+.sidebar a:hover {
+	background: #e2e2e2;
+}
+
+.sidebar .crossBar {
+	position: absolute;
+	top: 0;
+	right: 35px;
+	font-size: 36px;
+	cursor: pointer;
+}
+
+.content {
+	margin-left: 20%;
+}
+
+.my_profile_picture {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	object-fill: cover;
+	border: 1px solid black;
+}
+
+.serach-container {
+	position: relative;
+}
+
+.serach-result {
+	position: absolute;
+	background: white;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid gray;
+	padding: 10px;
+	display: none;
+}
+
+.active {
+	background: #009688 !important;
+	color: white !important;
+}

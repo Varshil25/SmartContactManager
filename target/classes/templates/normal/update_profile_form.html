@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org"
+	th:replace="normal/base::Layout(~{::section})">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+</head>
+<body>
+
+	<section>
+		<div class="card mr-4 ml-3">
+
+			<div class="card-body">
+
+				<h1 class="text-center">Update Your Profile</h1>
+
+				<div class="container-fluid mt-1">
+
+					<div class="row">
+						<div class="col-md-10 offset-md-1">
+							<form action="#" th:object="${user}"
+								enctype="multipart/form-data" method="post"
+								th:action="@{/user/profile-update}" class="mt-2">
+
+								<input type="hidden" th:value="${user.id}" name="id">
+
+								<!-- first name field -->
+								<!-- Name field -->
+								<div class="mb-3 form-group">
+									<label for="name_field" class="form-label">Your Name </label>
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<div class="input-group-text">
+												<i class="fa fa-plus"></i>
+											</div>
+										</div>
+										<input type="text" class="form-control" id="name_field"
+											name="name" aria-describedby="emailHelp"
+											th:value="${user.name}" placeholder="Enter Name here"
+											required="required" />
+									</div>
+								</div>
+
+								<!-- Email field -->
+								<div class="mb-3 form-group">
+									<label for="email_field" class="form-label">Your Email</label>
+									<div class="input-group mt-3">
+										<div class="input-group-prepend">
+											<div class="input-group-text">@</div>
+										</div>
+										<input type="email" class="form-control" id="email_field"
+											name="email" aria-describedby="emailHelp"
+											placeholder="Enter Email Id" th:value="${user.email}"
+											required="required" />
+									</div>
+								</div>
+
+
+
+								<!-- about field -->
+								<div class="form-group">
+									<label for="email_field" class="form-label">Your
+										Description </label>
+									<textarea th:text="${user.about}" class="form-control"
+										name="about" placeholder="Enter something yourself" rows="5"
+										id="floatingTextarea"></textarea>
+								</div>
+
+
+
+								<div class="container text-center">
+									<button class="btn btn-outline-primary" type="submit">Save
+										Profile</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</body>
+</html>

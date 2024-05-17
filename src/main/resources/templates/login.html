@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org"
+	th:replace="base::Layout(~{::section})">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+</head>
+<body>
+
+	<section class="login-body">
+		<div id="login">
+			<div class="container">
+				<div id="login-row"
+					class="row justify-content-center align-items-center">
+					<div id="login-column" class="col-md-7">
+						<div id="login-box" class="col-md-8 offset-md-2">
+							<form id="login-form" class="form" th:action="@{/dologin}"
+								action="#" method="post">
+								<h3 class="text-center text-info">Login</h3>
+								<div th:if="${param.error}" class="alert alert-danger">
+									Invalid username and password</div>
+								<div th:if="${param.logout}" class="alert alert-success">
+									you have been logged out</div>
+								<div th:if="${param.change}" class="alert alert-success text-center" style="height: 50px;">
+									<p th:text="${param.change}"></p>
+								</div>
+								<div class="form-group">
+									<label for="username" class="text-info">Username:</label><br>
+									<input type="text" name="username" id="username"
+										class="form-control">
+								</div>
+								<div class="form-group">
+									<label for="password" class="text-info">Password:</label><br>
+									<input type="password" name="password" id="password"
+										class="form-control">
+								</div>
+								<div
+									class="form-group d-flex justify-content-between mt-1 align-items-center">
+									<div class="remember-me mt-1">
+										<label for="remember-me" class="text-info "><input
+											id="remember-me" name="remember-me" type="checkbox">
+											Remember me</label>
+									</div>
+									<div id="register-link" class="text-right">
+										<a href="/signup" class="text-info">Register here</a>
+									</div>
+									<div id="forgot-password-link" class="text-right">
+										<a href="/forgot" class="text-info">Forgot password</a>
+									</div>
+								</div>
+
+								<div class="form-group text-center">
+									<input type="submit" name="submit" class="btn btn-info btn-md"
+										value="Submit">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</body>
+</html>
