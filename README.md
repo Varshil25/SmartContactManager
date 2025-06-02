@@ -20,6 +20,10 @@ Smart Contact Manager is an advanced contact management application built with S
 </br></br>
 ![image](https://github.com/Varshil25/SmartContactManager/assets/130171937/6b5c5666-3b40-4b41-82c8-0ed8bedfe9cb)
 
+![809555077](https://github.com/user-attachments/assets/cd940198-932c-4de7-997c-66c7af680354)
+![809555077](https://github.com/user-attachments/assets/fd18b772-746e-4a92-86d2-b7d9957fad12)
+
+
 ## Features
 
 - **Contact Management:** Add, edit, and delete contacts.
